@@ -4,7 +4,7 @@ var io = require('socket.io')(server);
 
 var path = require('path'); 
 
-var port = 8080; 
+var port = process.env.PORT || 8080;
 
 var connections = [];
 var users = [];
